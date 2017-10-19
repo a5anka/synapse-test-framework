@@ -1,9 +1,13 @@
+synapseAgent:
+  hostname: localhost
+  port: 9001
+
 synapseServer:
-  hostname: 10.100.8.3
+  hostname: localhost
   port: 8280
 
 backendServer:
-  hostname: 10.100.8.3
+  hostname: localhost
   port: 9000
 
 axis2ClientConfig:

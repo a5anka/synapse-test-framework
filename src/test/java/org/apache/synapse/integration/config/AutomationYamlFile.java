@@ -4,6 +4,7 @@ import org.apache.synapse.integration.utils.TestUtils;
 
 public class AutomationYamlFile {
 
+    private ServerDetails synapseAgent;
     private ServerDetails synapseServer;
     private ServerDetails backendServer;
     private Axis2ClientConfig axis2ClientConfig;
@@ -40,6 +41,17 @@ public class AutomationYamlFile {
     public void setAxis2ClientConfig(
             Axis2ClientConfig axis2ClientConfig) {
         this.axis2ClientConfig = axis2ClientConfig;
+    }
+
+    /**
+     * Getter for synapseAgent
+     */
+    public ServerDetails getSynapseAgent() {
+        return synapseAgent;
+    }
+
+    public void setSynapseAgent(ServerDetails synapseAgent) {
+        this.synapseAgent = synapseAgent;
     }
 
     public static class ServerDetails {
